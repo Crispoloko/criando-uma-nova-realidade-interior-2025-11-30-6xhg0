@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda a Criar Uma Nova Realidade Interior com meditações guiadas e transformação espiritual.">
+    <meta name="keywords" content="meditação, realidade interior, consciência, transformação espiritual">
+    <meta name="author" content="Neuro Formula">
+    <meta property="og:title" content="Criando Uma Nova Realidade Interior">
+    <meta property="og:description" content="Aprenda a Criar Uma Nova Realidade Interior com meditações guiadas e transformação espiritual.">
+    <meta property="og:type" content="website">
+    <title>Criando Uma Nova Realidade Interior - Meditação e Transformação Espiritual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .button-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-hover:hover {
+            transform: scale(1.05);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(31, 41, 55, 0.85) 100%);
+        }
+        
+        .faq-answer {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 500px;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-brain text-2xl gradient-text"></i>
+                <span class="text-xl font-bold">NeuroFormula</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300">Início</a>
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Recursos</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefícios</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">Sobre</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Depoimentos</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contato</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-white hover:text-gray-300 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-4">
+                <a href="#home" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Início</a>
+                <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Recursos</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Benefícios</a>
+                <a href="#about" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Sobre</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Depoimentos</a>
+                <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">FAQ</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&h=900&fit=crop&q=80'); background-size: cover; background-position: center; opacity: 0.25;"></div>
+        <div class="absolute inset-0 z-1 hero-overlay"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                Criando Uma Nova<br class="hidden md:block"> Realidade Interior
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Aprenda a Criar Uma Nova Realidade Interior
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://mindfulcon-j3enrq6k.adaptive.ai/?_evid=VG9i9JK6BKjNGXTKhttps://gmail.com" class="button-hover px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-bold text-lg hover:from-purple-700 hover:to-blue-700 shadow-lg">
+                    Começar Agora
+                </a>
+                <a href="#features" class="button-hover px-8 py-4 border-2 border-purple-600 rounded-lg font-bold text-lg hover:bg-purple-600 hover:bg-opacity-10 transition-all duration-300">
+                    Saiba Mais
+                </a>
+            </div>
+            
+            <div class="mt-12 flex justify-center gap-8 text-gray-400 text-sm">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span>100% Seguro</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span>Acesso Imediato</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span>Garantia Satisfação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Nossos Recursos Principais</h2>
+                <p class="text-xl text-gray-400">Descubra as ferramentas poderosas que transformarão sua vida interior</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Feature 1 -->
+                <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-600">
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-magic text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Transforme Seu Mundo Interior</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Acesse técnicas avançadas de transformação mental que reprogramam suas crenças limitantes e abrem portas para uma realidade completamente nova e positiva dentro de você.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-600">
+                    <div class="bg-gradient-to-br from-blue-600 to-cyan-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-spa text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Meditações Guiadas</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Sessões de meditação profundamente orientadas por especialistas que guiam você através de estados expandidos de consciência, levando à paz interior duradoura e transformação profunda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Benefícios Transformadores</h2>
+                <p class="text-xl text-gray-400">Veja como você pode mudar sua vida completamente</p>
+            </div>
+            
+            <!-- Benefit 1 -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop&q=80" alt="Transformar Realidade Interior" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-transparent opacity-30"></div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 fade-in">
+                    <h3 class="text-3xl font-bold mb-4 text-purple-400">Transforme Sua Realidade Interior</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Desenvolva uma compreensão profunda de como seus pensamentos criam sua realidade. Através de práticas comprovadas e técnicas revolucionárias, você aprenderá a reimaginar completamente sua vida interior, transformando padrões negativos em oportunidades positivas de crescimento e evolução pessoal.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Reprograme suas crenças limitantes</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Acesse seu potencial ilimitado</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Crie a vida que você deseja</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Benefit 2 -->
+            <div class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="fade-in">
+                    <h3 class="text-3xl font-bold mb-4 text-blue-400">Encontre Paz Interior Profunda</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Descubra um estado de paz genuína que transcende as circunstâncias externas. Nossas técnicas meditativas avançadas conduzem você a estados de consciência onde o estresse, a ansiedade e as preocupações se dissolvem, deixando apenas serenidade, clareza mental e uma sensação profunda de bem-estar que permeia sua existência.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Reduza estresse e ansiedade</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Durma melhor e mais profundamente</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Viva com tranquilidade constante</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1528715471579-d1bcb0ee909f?w=800&h=600&fit=crop&q=80" alt="Encontrar Paz" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-l from-blue-600 to-transparent opacity-30"></div>
+                </div>
+            </div>
+            
+            <!-- Benefit 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&q=80" alt="Elevar Consciência" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-600 to-transparent opacity-30"></div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 fade-in">
+                    <h3 class="text-3xl font-bold mb-4 text-cyan-400">Eleve Sua Consciência</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Ascenda para níveis mais elevados de percepção e compreensão. Expanda sua consciência além dos limites convencionais, acessando sabedoria interior e uma perspectiva universal que transforma como você entende a si mesmo, aos outros e ao universo, levando a uma vida mais significativa e conectada.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Conecte-se com sabedoria interior</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Expanda sua perspectiva de vida</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Viva com propósito e significado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Veja Como Funciona</h2>
+                <p class="text-xl text-gray-400">Descubra os segredos da transformação interior em nosso vídeo exclusivo</p>
+            </div>
+            
+            <div class="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+                <div class="relative pb-[56.25%] h-0 overflow-hidden">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/eiW96FaAlPE?rel=0&modestbranding=1&autohide=1&showinfo=0"
+                        title="Criando Uma Nova Realidade Interior"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Sobre Nós</h2>
+                <p class="text-xl text-gray-400">Conheça nossa história e missão</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="card-hover bg-gray-800 rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Nossa História</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        A NeuroFormula foi fundada em 2018 por um grupo de neurocientistas, psicólogos e especialistas em meditação que compartilhavam uma visão comum: democratizar o acesso a técnicas avançadas de transformação mental e elevação de consciência. Começamos como uma pequena iniciativa em um laboratório de pesquisa, estudando os efeitos profundos da meditação no cérebro humano e desenvolvendo metodologias inovadoras baseadas em ciência.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Ao longo dos anos, evoluímos para uma plataforma global que atende centenas de milhares de pessoas em mais de 50 países, combinando pesquisa científica rigorosa com sabedoria ancestral de tradições contemplativas milenares, criando um método único e poderoso de transformação pessoal.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Nossa Missão</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Nossa missão é capacitar indivíduos a transformarem sua realidade interior, libertando-se de padrões limitantes e acessando seu potencial ilimitado. Acreditamos que cada pessoa possui uma sabedoria interior infinita e que através de práticas contemplativas corretas e orientação especializada, qualquer um pode alcançar estados de paz profunda, clareza mental e elevação de consciência.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Nossos valores fundamentais são: integridade científica, acessibilidade universal, compaixão genuína e compromisso com a evolução humana. Nos dedicamos a oferecer ferramentas e orientação de qualidade superior que transformem vidas, uma pessoa por vez, criando uma comunidade global de seres conscientes e iluminados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-xl text-gray-400">Histórias reais de transformação e impacto</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-600">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-400 text-sm">(5/5)</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "A transformação que experimentei com a NeuroFormula foi absolutamente extraordinária. Depois de apenas 3 semanas praticando as meditações guiadas e aplicando as técnicas de reprogramação mental, minha ansiedade desapareceu completamente. Agora vivo com uma paz que nunca imaginei ser possível. Minha produtividade aumentou 300% e meus relacionamentos melhoraram drasticamente."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Marina Silva</p>
+                            <p class="text-gray-400 text-sm">Executiva, São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-600">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-400 text-sm">(5/5)</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "Eu era cético no início, mas os resultados falam por si. Comecei com insônia crônica e depressão leve, e após seguir o programa durante dois meses, durmo profundamente todas as noites e meu humor melhorou significativamente. As meditações guiadas são incrivelmente eficazes. Recomendo a NeuroFormula para qualquer pessoa buscando mudança real."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Carlos Mendes</p>
+                            <p class="text-gray-400 text-sm">Empresário, Rio de Janeiro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-600">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-400 text-sm">(5/5)</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "Descobri a NeuroFormula em um momento de crise pessoal e profissional. O programa me ajudou a ver minha vida sob uma perspectiva completamente diferente. Consegui deixar um trabalho que me tornava infeliz e iniciar um novo projeto alinhado com meus valores. A transformação interior que experimentei foi o catalisador para mudanças externas extraordinárias."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-cyan-600 to-teal-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Juliana Costa</p>
+                            <p class="text-gray-400 text-sm">Consultora de Carreiras, Belo Horizonte</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-600">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-400 text-sm">(5/5)</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "Como psicólogo, posso atestar que os métodos da NeuroFormula são fundamentados em neurocência sólida. Meus pacientes que seguem o programa mostram melhoras significativas em suas condições emocionais e cognitivas. Passei a recomendar o programa para minha prática profissional. É um recurso extraordinário para transformação mental e espiritual."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-teal-600 to-green-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white">Dr. Paulo Oliveira</p>
+                            <p class="text-gray-400 text-sm">Psicólogo Clínico, Brasília</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Perguntas Frequentes</h2>
+                <p class="text-xl text-gray-400">Encontre respostas para suas dúvidas</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-left text-white">Como funciona a plataforma NeuroFormula?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-400 leading-relaxed">
+                            A plataforma NeuroFormula combina meditações guiadas de áudio com técnicas avançadas de reprogramação mental. Você acessa um dashboard personalizado onde pode escolher entre diferentes programas baseados em seus objetivos específicos. Cada programa inclui meditações diárias de 15-30 minutos, exercícios práticos de transformação mental, conteúdo educacional sobre neurocência e consciência, além de acompanhamento personalizado. Você pode praticar no seu próprio ritmo, em qualquer lugar, a qualquer hora, usando seu smartphone, tablet ou computador.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-left text-white">Quanto tempo leva para ver resultados?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-400 leading-relaxed">
+                            A maioria dos usuários relata mudanças notáveis dentro de 7-14 dias de prática consistente. Você pode começar a sentir maior calma e clareza mental após a primeira meditação. No entanto, para transformações profundas e duradouras, recomendamos um comprometimento mínimo de 30 dias com prática diária. Os resultados mais significativos geralmente ocorrem entre 60-90 dias, quando as novas conexões neurais se consolidam e os padrões mentais se transformam permanentemente. Cada pessoa é única, então o tempo pode variar dependendo da sua dedicação e ponto de partida.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-left text-white">Preciso de experiência prévia em meditação?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-400 leading-relaxed">
+                            Absolutamente não! A NeuroFormula foi especificamente desenvolvida para iniciantes completos. Nossas meditações guiadas são conduzidas por instrutores experientes que o orientam passo a passo, tornando o processo fácil e acessível. Se você nunca meditou antes, começará com técnicas básicas e progressivamente avançará para práticas mais profundas. Não há pressão ou expectativas - apenas siga as instruções e deixe que a transformação aconteça naturalmente. Muitos dos nossos usuários mais satisfeitos eram completamente novos na meditação quando começaram.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-left text-white">Há garantia de satisfação ou política de reembolso?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-400 leading-relaxed">
+                            Sim! Oferecemos uma garantia completa de satisfação de 60 dias. Se você seguir o programa consistentemente durante 60 dias e não experimentar os benefícios descritos, ofereceremos um reembolso total sem fazer perguntas. Acreditamos tão profundamente na eficácia do nosso método que estamos dispostos a apostar nisso. Além disso, oferecemos suporte ao cliente 24/7 para ajudá-lo em qualquer dúvida ou dificuldade que possa ter durante sua jornada de transformação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&h=900&fit=crop&q=80'); background-size: cover; background-position: center; opacity: 0.25;"></div>
+        <div class="absolute inset-0 z-1 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Comece Sua Transformação Hoje</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Não espere mais para criar a vida que você merece. Acesse a NeuroFormula agora e comece sua jornada para uma realidade interior transformada.
+            </p>
+            
+            <a href="https://mindfulcon-j3enrq6k.adaptive.ai/?_evid=VG9i9JK6BKjNGXTKhttps://gmail.com" class="button-hover inline-block px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-bold text-lg hover:from-purple-700 hover:to-blue-700 shadow-lg">
+                Acessar Agora - Acesso Imediato
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Entre em Contato</h2>
+                <p class="text-xl text-gray-400">Estamos aqui para ajudar você em sua jornada de transformação</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Contact Info 1 -->
+                <div class="card-hover bg-gray-800 rounded-xl p-8 border border-gray-700 text-center">
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-400 mb-4">Envie-nos uma mensagem</p>
+                    <a href="mailto:neuroformula@gmail.com" class="text-purple-400 hover:text-purple-300 transition-colors duration-300 font-semibold">
+                        neuroformula@gmail.com
+                    </a>
+                </div>
+                
+                <!-- Contact Info 2 -->
+                <div class="card-hover bg-gray-800 rounded-xl p-8 border border-gray-700 text-center">
+                    <div class="bg-gradient-to-br from-blue-600 to-cyan-600 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Disponibilidade</h3>
+                    <p class="text-gray-400 mb-4">Suporte 24/7</p>
+                    <p class="text-purple-400 font-semibold">
+                        Sempre disponível para você
+                    </p>
+                </div>
+                
+                <!-- Contact Info 3 -->
+                <div class="card-hover bg-gray-800 rounded-xl p-8 border border-gray-700 text-center">
+                    <div class="bg-gradient-to-br from-cyan-600 to-teal-600 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Comunidade Global</h3>
+                    <p class="text-gray-400 mb-4">Conectado com pessoas em</p>
+                    <p class="text-purple-400 font-semibold">
+                        50+ países
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="max-w-2xl mx-auto bg-gray-800 rounded-xl p-8 border border-gray-700">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2">Nome Completo</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition-all duration-300" placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition-all duration-300" placeholder="seu@email.com">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold mb-2">Assunto</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition-all duration-300" placeholder="Como podemos ajudar?">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-semibold mb-2">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition-all duration-300 resize-none" placeholder="Sua mensagem aqui..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="button-hover w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-bold text-lg hover:from-purple-700 hover:to-blue-700 shadow-lg transition-all duration-300">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-brain text-2xl gradient-text"></i>
+                        <span class="text-xl font-bold">NeuroFormula</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Transformando vidas através de meditação guiada e elevação de consciência. Criando uma nova realidade interior para cada pessoa.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Início</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Recursos</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefícios</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Recursos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Depoimentos</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Política de Privacidade</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Termos de Serviço</a></li>
+                        <li><a href="mailto:neuroformula@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">Entre em Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <div class="flex justify-center gap-6 mb-6">
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-twitter text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-youtube text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; <span id="year">2024</span> NeuroFormula. Todos os direitos reservados. Criando Uma Nova Realidade Interior.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                const otherAnswer = otherItem.querySelector('.faq-answer');
+                                const otherIcon = otherItem.querySelector('.faq-icon');
+                                if (otherAnswer) otherAnswer.classList.add('hidden');
+                                if (otherIcon) otherIcon.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        if (answer) answer.classList.toggle('hidden');
+                        const icon = item.querySelector('.faq-icon');
+                        if (icon) icon.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+
+            // Form Submission Handler
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
