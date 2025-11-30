@@ -773,6 +773,12 @@
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    const mailtoLink = `mailto:neuroformula@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`)}`;
+                    window.location.href = mailtoLink;
                     alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
                     this.reset();
                 });
